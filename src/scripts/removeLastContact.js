@@ -6,7 +6,7 @@ const removeLastContact = async () => {
     const contacts = await readContacts();
 
     if (contacts && contacts.length > 0) {
-      // Видаляємо останній елемент з масиву
+
       const removedContact = contacts.pop();
       
       await writeContacts(contacts);

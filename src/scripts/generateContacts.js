@@ -2,7 +2,6 @@ import { faker } from '@faker-js/faker';
 import { readContacts } from '../utils/readContacts.js';
 import { writeContacts } from '../utils/writeContacts.js';
 
-// Допоміжна функція для створення одного фейкового контакту
 const createFakeContact = () => {
   return {
     id: faker.string.uuid(),
@@ -13,7 +12,6 @@ const createFakeContact = () => {
   };
 };
 
-// Головна функція для генерації контактів
 const generateContacts = async (count) => {
   try {
     const existingContacts = await readContacts();
